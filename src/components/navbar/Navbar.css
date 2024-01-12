@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* svg{background-color: rgb(0, 0, 0);} */
+.main-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 88px;
+    box-shadow: 0 5px 15px rgb(223, 217, 217);
+}
+
+#navbar {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-link ul li {
+    padding: 0 7px;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.menu-link ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(87, 87, 87);
+    transition: 0.3s ease-in-out;
+
+}
+/* .menu-link ul li a.active, */
+.menu-link ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.menu-link ul li a:hover{
+    background-color: transparent;
+
+}
+
+
+.menu-link ul li a:hover::after,
+.menu-link ul li a.active::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgb(255, 179, 36);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.hamburger {
+    display: none;
+   
+}
+
+.hamburger i {
+    color: black;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:970px) {
+    .main-link {
+        padding: 15px 55px;
+    }
+
+    #navbar { 
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 60px;
+        right: -500px;
+        width: 300px;
+        height: 100vh;
+        box-shadow: 0 40px 60px rgb(255, 179, 36);
+        padding: 40px 0 0 10px;
+        background-color: white;
+        transition: 0.8s;
+    }
+    
+    #navbar.active{
+        right: 0px;
+
+    }
+    .menu-link ul li{
+        margin-bottom: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .hamburger i{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .hamburger i:hover{
+        color: rgb(255, 179, 36);
+    }
+}

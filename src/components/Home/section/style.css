@@ -1,0 +1,158 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box{
+    width: 100%;
+    height: 100%;
+   
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   position: relative;
+   top: 85px;
+   z-index: -1;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.name{
+    padding: 0 12px;
+    
+}
+.name h1{
+    font-size:2.8rem ;
+    font-weight: 600;
+}
+.name h1 span{
+    color:rgb(255, 179, 36);
+}
+.name h3{
+    font-weight: 600;
+  
+}
+.btn1 a{
+    width: 100%;
+    border-radius: 15px;
+    padding: 8px 13px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 179, 36);
+    font-weight: 600;
+    border:2px solid rgb(202, 192, 45);
+    text-decoration: none;
+    color: black;
+
+}
+
+.name h6{
+    font-style: bold;
+    font-size: 1rem;
+    width: 90%;
+    margin: 30px 0px;
+    color: rgb(99, 99, 99);
+
+}
+
+.image img{
+width: 200px;
+border-radius: 15px;
+box-shadow: 0 20px 20px rgb(255, 179, 36);
+
+}
+
+@media screen and (max-width:970px){
+  
+    .box{
+        flex-direction: column;
+        margin-top: 52px;
+    }
+ .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .btn1 a{
+    font-size: 1rem;
+    padding: 8px 22px;
+    display: block;
+    margin-bottom: 25px;
+ 
+ }
+ .name h1{
+    font-size: 2.5rem;
+ }
+
+ .name h6{
+    text-align: center;
+    margin: 20px 0;
+    padding: 0px 22px;
+ }
+ .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .image img{
+
+    margin-top: 20px;
+    width: 150px;
+ }
+
+}
+@media screen and (max-width:700px){
+    .name h1{
+        font-size: 2.8rem;
+    }
+    .name h3{
+        font-size: 1.8rem;
+        margin: 0px;
+    }
+    .image img{
+        margin-top: 20px;
+        width: 40%;
+     }
+
+    
+}
+@media screen and (max-width:540px){
+    .box{
+       top: 22px;
+    }
+    .name h1{
+        font-size: 2.5rem;
+    }
+    .name h3{
+        font-size: 1.5rem;
+    }
+    .btn a{
+        margin-bottom:52px;
+    }
+}
+@media screen and (max-width:350px){
+    .name h1{
+        font-size: 2rem;
+    }
+    .name h3{
+        font-size: 1.2rem;
+    }
+    .btn button{
+        margin:0px
+    }
+    .name h6{
+        font-size: 1rem;
+        padding:0px
+    }
+     .image img{
+        width: 150px;
+        margin: 0;
+     }  
+      
+}

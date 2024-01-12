@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content_skill {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 25px;
+    column-gap: 22px;
+    justify-items: center;
+
+}
+
+.heading {
+    margin-top: 50px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    text-align: center;
+}
+
+/* .heading h1 {
+    font-size: 4rem;
+} */
+
+.heading h6 {
+    font-size: 1rem;
+    background-color: rgb(255, 179, 36);
+    border-radius: 8px;
+    padding: 2px 6px;
+    color: white;
+
+}
+
+.skill_part {
+    display: grid;
+    column-gap: 5px;
+    justify-self: center;
+    width: 80%;
+}
+
+.head_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.head_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head_item h3 {
+    margin: 0;
+}
+
+.fa-code-fork,
+.fa-code {
+    font-size: 1.5rem;
+    margin-right: 12px;
+}
+
+.fa-angle-down {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.fa-angle-up {
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.data_skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data_skills h5 {
+    font-size: 1.5rem;
+
+}
+
+.data_skills span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.items_list {
+    margin-top: 8px;
+    width: 90%;
+    height: 80%;
+    margin-left: 1rem;
+    transition: 0.9s;
+    margin-bottom: 12px;
+} 
+
+.open {
+    height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+}
+
+.parcentage {
+    width: 80%;
+    border: 2px solid black;
+    margin-left: 1.5rem;
+    border-radius: 5px;
+}
+
+.parcentage h1 {
+    height: 0.5rem;
+    background-color: rgb(255, 179, 36);
+    margin-bottom: 0;
+}
+
+.data_skills {
+    margin: 0px 12px;
+}
+
+.html_skill {
+    width: 90%;
+    background-color: rgb(255, 179, 36);
+}
+
+.css_skill {
+    width: 80%;
+}
+
+.javascript_skill {
+    width: 60%;
+}
+
+.react_skill {
+    width: 70%;
+}
+
+.node_skill {
+    width: 70%;
+}
+
+.php_skill {
+    width: 70%;
+}
+
+.django_skill {
+    width: 60%;
+}
+
+
+.c_skill {
+    width: 75%;
+}
+
+.java_skill {
+    width: 68%;
+}
+
+.python_skill {
+    width: 60%;
+}
+
+@media screen and (max-width:970px) {
+    .heading{
+        margin-top: 40px;
+    }
+    .content_skill {
+        grid-template-columns: 1fr;
+        row-gap: 0px;
+    }
+
+    .heading {
+        grid-column-start: 1;
+        grid-column-end: 1;
+
+    }
+
+    .skill_part {
+        width: 60%;
+        margin-top: 46px;
+    }
+}
+ 
+@media screen and (max-width:450px) {
+    .content_skill {
+        row-gap: 0px;
+    }
+
+    .heading h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .content_skill {
+        row-gap: 0px;
+    }
+
+    .heading h1 {
+        font-size: 2.3rem;
+    }
+
+    .heading h6 {
+        font-size: 1rem;
+    }
+
+    .head_item i {
+        font-size: 1.3rem;
+    }
+
+    .front_skill {
+        margin: 0;
+    }
+
+    .skill_part {
+        width: 60%;
+        margin-top: 0px;
+    }
+
+    .data_skills h5 {
+        font-size: 1rem;
+    }
+
+    .head_item h3 {
+        font-size: 1rem;
+    }
+
+    .fa-angle-down,
+    .fa-angle-up {
+        font-size: 1rem;
+    }
+}

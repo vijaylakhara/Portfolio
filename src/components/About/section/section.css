@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-part {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-part img {
+    width: 15%;
+    border-radius: 100px;
+    box-shadow: 24px 25px 15px rgb(66, 60, 60);
+}
+
+.part {
+    height: 100%;
+    width: 45%;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#info {
+    font-size: 1.1rem;
+    font-weight: 400;
+    width: 95%;
+    z-index: -1;
+}
+
+.content {
+    align-items: center;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.content h1 span {
+    color: rgb(255, 179, 36);
+}
+
+.exprerience {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+
+}
+
+.year {
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 4px 0px;
+    margin-right: 8px;
+    border: 2px solid rgb(202, 192, 45);
+    background-color: rgb(255, 179, 36);
+    z-index: -1;
+}
+
+.year h2 {
+    font-size: 1.1rem;
+}
+
+.year p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.year:hover {
+    border: 2px solid red;
+    background-color: red;
+}
+
+.btn a {
+    width: 100%;
+    border-radius: 15px;
+    padding: 8px 13px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 179, 36);
+    font-weight: 600;
+    border: 2px solid rgb(202, 192, 45);
+    text-decoration: none;
+    color: black;
+    z-index: -1;
+
+}
+
+a:hover {
+    background-color: rgb(255, 166, 0);
+}
+
+@media screen and (max-width:970px) {
+    .part {
+        width: 100%;
+    }
+
+    .exprerience {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .content-part {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-part img {
+        width: 35%
+    }
+
+    .year {
+        width: 80%;
+        margin-top: 12px;
+    }
+
+    .btn a {
+        font-size: 1.5rem;
+        padding: 8px 22px;
+        position: relative;
+        top: 46px;
+
+    }
+
+    #info {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:540px) {
+
+    .content h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .year p {
+        margin: 0;
+    }
+
+    .year h2 {
+        font-size: 1rem;
+    }
+
+    .year p {
+        font-size: 1rem;
+    }
+
+    .btn a {
+        top: 20px;
+
+    }
+
+    #info {
+        width: 95%;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .content-part img {
+        margin: 0;
+
+    }
+}
+
+@media screen and (max-width:411px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .btn a {
+        font-size: 1rem;
+        padding: 7px 12px;
+        top: 10px;
+    }
+
+    #info {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .year h2 {
+        margin: 0;
+    }
+
+    .year {
+        font-size: 0.8rem;
+        margin-top: 5px;
+        padding: 2px 0px;
+    }
+}
